@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in} % left page margin
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1.2in} % right margin
+\addtolength{\topmargin}{-.75in} % moves content up
+\addtolength{\textheight}{1.3in} % bottom margin
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large  
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\CertificationSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\projectSubheading}[1]{
+  \vspace{-0pt}\item
+  \textbf{#1}
+  \vspace{-8pt}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{mail@website.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+\begin{center}
+    \textbf{\Huge Manish Kumar Sharma} \\
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 7897739391 ~ \href{mailto:manish30d@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ manish30d@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/mks30d/}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/mks30d}  ~
+    \href{https://github.com/Mks30d/}{\raisebox{-0.2\height}\faGithub\ github.com/Mks30d}
+    \vspace{0pt}
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flutter Developer}{Jan 2026 - Present}
+      {DBS Security Systems Pvt. Ltd.}{Faridabad, India}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented biometric unlock flows (Fingerprint, Face) and time-based access restrictions for eKeys, NFC Cards, Fingerprint, Face, and Passcodes, enabling users with more control over the lock.}
+        \resumeItem{}
+          {Accelerated release cycles by integrating Shorebird for over-the-air (OTA) updates, reducing dependency on manual Play Store deployments.}
+        \resumeItem{}
+          {Improved production stability of the Endroid ECam app by resolving critical state management and authentication bugs; contributed to Clean Architecture migration, enhancing code scalability and maintainability.}
+        \resumeItem{}
+          {Mentored a junior intern on Firebase integration and Git workflows, reducing onboarding time and improving team productivity.}
+        \resumeItem{\textbf{Exposure:} Flutter, Firebase (Auth, Firestore, Remote Config), TTLock SDK, Shorebird, Provider, Clean Architecture}        
+          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter Developer Intern}{Sept - Dec 2025}
+      {DBS Security Systems Pvt. Ltd.}{Faridabad, India}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed advanced lock management features using TTLock SDK, including multi-lock handling, NFC card integration, passcode generation, and eKey sharing with time-based permission controls.}
+        \resumeItem{}
+          {Architected scalable Firebase integration (Auth + Firestore) powering user account management, lock lifecycle operations (add, update, delete), and multi-lock switching}
+        \resumeItem{}
+          {Architected a clean, responsive UI/UX with robust state management using Provider, local data persistence via SharedPreferences, and thorough runtime permission handling.}
+        \resumeItem{\textbf{Exposure:} Flutter, Firebase (Auth, Firestore), TTLock SDK, Provider, SharedPreferences, Permission Handling}        
+          
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%
+%--------Technical Skills------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages \& Frameworks:- }{Java, Dart, Flutter} \\
+     \textbf{Databases:- }{Firebase (Auth, Firestore, Crashlytics, Remote Config)} \\
+     \textbf{Tools:- }{Git, GitHub, Postman, Shorebird} \\
+     \textbf{Core Skills:- }{App development, Provider, Shared Preferences, SDK Integration, OOPs, Problem-Solving} \\
+   }
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\projectSubheading
+    {LokTok \hfill 
+    {\small 
+    \href{https://play.google.com/store/apps/details?id=com.endroid.loktok}{\textcolor{blue}{Play Store}}
+    }}
+
+\resumeItemListStart
+  \resumeItem{}
+    {Developed and published a IoT based production Flutter app on Google Play for managing TTLock-based smart handle door locks, featuring nearby lock detection, multi-lock management, and real-time remote/bluetooth based unlocking.}
+  \resumeItem{}
+    {Implemented multi-mode unlocking feature (Face Recognition, Fingerprint, NFC Card, Passcode) with time-based access control for all credential types, delivering a robust and flexible security layer.}
+  \resumeItem{}
+    {Deployed OTA updates via Shorebird and ensured production reliability through robust Bluetooth and runtime permission handling, backed by a clean, user-centric responsive UI.}
+\resumeItemListEnd
+
+\vspace{-5pt}
+
+\projectSubheading
+    {UNIVRSA \hfill 
+    {\small 
+    \href{https://your-app-link.com}{\textcolor{blue}{App Link}}, 
+    \href{https://github.com/Mks30d/Student-App}{\textcolor{blue}{GitHub}}
+    }}
+
+\resumeItemListStart
+  \resumeItem{}
+    {Developed UNIVRSA, a student management system app using Flutter and Firebase, allowing students to log in and track attendance, assignments, and academic information in real-time.}
+  \resumeItem{}
+    {Integrated Firebase for authentication, role-based access, and efficient real-time database management.}
+  \resumeItem{}
+    {Collaborated with a team of three to implement features like notes, PYQs, resource sharing, and user management with seamless real-time updates.}
+  % \resumeItem{}
+  %   {\textbf{Exposure:} Flutter, Firebase, Shared Preferences}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Computer Applications}{2023 - 2025}
+      {JSS Academy of Technical Education - AKTU}
+      {Noida}
+
+      % {Master of Computer Applications}{2023 - 2025}
+      % {JSS Academy of Technical Education, Noida - AKTU}{}
+    \resumeSubheading
+      {Bachelor of Computer Applications}{2019 - 2022}
+      {Gandhi Faiz-e-aam College - MJPRU}{Shahjahanpur}
+
+  \resumeSubHeadingListEnd
+
+%-----------Certification-----------------
+\section{Certification}
+  \resumeSubHeadingListStart
+
+    \CertificationSubheading
+      {Full-Stack Web Developer Intern}{Feb - April 2023}
+      {Innomatics Research Labs}{Remote}
+      \resumeItemListStart
+        % \resumeItem{}
+        %   {Gained exposure in HTML, CSS, JavaScript, Bootstrap, React, Node.js and MongoDB by building multiple project like Notes-Taking App, Covid-19 Tracker, Weather App, and WazirX Clone.}
+        % \resumeItem{}
+        %   {Developed responsive web applications (Notes App, Covid-19 Tracker, Weather App, WazirX Clone) using HTML, CSS, JavaScript, React, Node.js, and MongoDB with API integration.}
+        % \resumeItem{}
+        %   {Gained experience in web development by building dynamic, responsive web applications such as a Notes-Taking App, Covid-19 Tracker, Weather App, and WazirX Clone, with a focus on responsive design and API integrations.}
+        % \resumeItem{\textbf{Exposure:} HTML, CSS, JavaScript, Bootstrap, React, Node.js and MongoDB}
+
+      \resumeItemListEnd
+
+    \CertificationSubheading
+      {Core Java Developer Intern}{July - Aug 2022}
+      {Precursor Info Solutions Pvt. Ltd.}{Lucknow, India}
+      \resumeItemListStart
+        % \resumeItem{}
+        %   {Built a Doctor Appointment Management System using Java (J2SE) and MySQL, enabling efficient patient and doctor record management.}
+        % \resumeItem{}
+        %   {Developed a Doctor Appointment Tracking System using JavaSE and MySQL, enabling nursing home managers and receptionists to efficiently add, update, and manage doctor and patient records.}
+        % \resumeItem{\textbf{Exposure:} Java/J2SE, SQL/MySQL}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Achievements-----------------
+\section{Achievements}
+    \resumeItemListStart
+      \resumeItem{}
+        {Secured 4th rank in the CodeQuest coding competition hosted by the Codezen Coding Society, MCA Department.}
+    \resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
