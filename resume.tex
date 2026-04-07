@@ -64,13 +64,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\CertificationSubheading}[4]{
+\newcommand{\CertificationSubheading}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
     \end{tabular*}\vspace{-5pt}
 }
-
 
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -83,9 +82,15 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-\newcommand{\projectSubheading}[1]{
+% \newcommand{\projectSubheading}[2]{
+%   \vspace{-0pt}\item
+%   \textbf{#1} {\small | #2}
+%   \vspace{-8pt}
+% }
+
+\newcommand{\projectSubheading}[3]{
   \vspace{-0pt}\item
-  \textbf{#1}
+  \textbf{#1} {\small #2} \hfill {\small #3}
   \vspace{-8pt}
 }
 
@@ -147,7 +152,7 @@
 
 
 %
-%--------Technical Skills------------
+%--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
@@ -163,10 +168,10 @@
 \resumeSubHeadingListStart
 
 \projectSubheading
-    {LokTok \hfill 
-    {\small 
-    \href{https://play.google.com/store/apps/details?id=com.endroid.loktok}{\textcolor{blue}{Play Store}}
-    }}
+    {LokTok -}
+    {Flutter, Firebase, Provider}
+    {\href{https://play.google.com/store/apps/details?id=com.endroid.loktok}{\textcolor{blue}{Play Store}}
+    }
 
 \resumeItemListStart
   \resumeItem{}
@@ -180,12 +185,12 @@
 \vspace{-5pt}
 
 \projectSubheading
-    {UNIVRSA \hfill 
-    {\small 
-    \href{https://your-app-link.com}{\textcolor{blue}{App Link}}, 
-    \href{https://github.com/Mks30d/Student-App}{\textcolor{blue}{GitHub}}
-    }}
-
+  {UNIVRSA -}
+  {Flutter, Firebase, Provider}
+  {\href{https://your-app-link.com} {\textcolor{blue}{App Link}}, 
+   \href{https://github.com/Mks30d/Student-App}{\textcolor{blue}{GitHub}}
+  }
+   
 \resumeItemListStart
   \resumeItem{}
     {Developed UNIVRSA, a student management system app using Flutter and Firebase, allowing students to log in and track attendance, assignments, and academic information in real-time.}
@@ -221,8 +226,8 @@
 
     \CertificationSubheading
       {Full-Stack Web Developer Intern}{Feb - April 2023}
-      {Innomatics Research Labs}{Remote}
-      \resumeItemListStart
+      % {Innomatics Research Labs}{Remote}
+      % \resumeItemListStart
         % \resumeItem{}
         %   {Gained exposure in HTML, CSS, JavaScript, Bootstrap, React, Node.js and MongoDB by building multiple project like Notes-Taking App, Covid-19 Tracker, Weather App, and WazirX Clone.}
         % \resumeItem{}
@@ -231,19 +236,19 @@
         %   {Gained experience in web development by building dynamic, responsive web applications such as a Notes-Taking App, Covid-19 Tracker, Weather App, and WazirX Clone, with a focus on responsive design and API integrations.}
         % \resumeItem{\textbf{Exposure:} HTML, CSS, JavaScript, Bootstrap, React, Node.js and MongoDB}
 
-      \resumeItemListEnd
+      % \resumeItemListEnd
 
     \CertificationSubheading
       {Core Java Developer Intern}{July - Aug 2022}
-      {Precursor Info Solutions Pvt. Ltd.}{Lucknow, India}
-      \resumeItemListStart
+      % {Precursor Info Solutions Pvt. Ltd.}{Lucknow, India}
+      % \resumeItemListStart
         % \resumeItem{}
         %   {Built a Doctor Appointment Management System using Java (J2SE) and MySQL, enabling efficient patient and doctor record management.}
         % \resumeItem{}
         %   {Developed a Doctor Appointment Tracking System using JavaSE and MySQL, enabling nursing home managers and receptionists to efficiently add, update, and manage doctor and patient records.}
         % \resumeItem{\textbf{Exposure:} Java/J2SE, SQL/MySQL}
 
-      \resumeItemListEnd
+      % \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
