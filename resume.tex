@@ -14,7 +14,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
 \usepackage{graphicx}
@@ -35,7 +35,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1.2in} % right margin
 \addtolength{\topmargin}{-.75in} % moves content up
-\addtolength{\textheight}{1.3in} % bottom margin
+\addtolength{\textheight}{1.4in} % bottom margin
 
 \urlstyle{same}
 
@@ -90,7 +90,7 @@
 
 \newcommand{\projectSubheading}[3]{
   \vspace{-0pt}\item
-  \textbf{#1} {\small #2} \hfill {\small #3}
+  \textbf{#1} {\small #2} \hfill \textbf{\small #3}
   \vspace{-8pt}
 }
 
@@ -156,10 +156,10 @@
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages \& Frameworks:- }{Java, Dart, Flutter} \\
-     \textbf{Databases:- }{Firebase (Auth, Firestore, Crashlytics, Remote Config)} \\
-     \textbf{Tools:- }{Git, GitHub, Postman, Shorebird} \\
-     \textbf{Core Skills:- }{App development, Provider, Shared Preferences, SDK Integration, OOPs, Problem-Solving} \\
+     \textbf{Languages \& Frameworks: }{Java, Dart, Flutter} \\
+     \textbf{Databases: }{Firebase (Auth, Firestore, Crashlytics, Remote Config)} \\
+     \textbf{Tools: }{Git, GitHub, Postman, Shorebird} \\
+     \textbf{Core Skills: }{App development, Provider, Shared Preferences, SDK Integration, OOPs, Problem-Solving} \\
    }
  \resumeSubHeadingListEnd
 
@@ -169,7 +169,7 @@
 
 \projectSubheading
     {LokTok -}
-    {Flutter, Firebase, Provider}
+    {Flutter, Firebase, TTLock SDK, Provider, Shorebird, SharedPreferences}
     {\href{https://play.google.com/store/apps/details?id=com.endroid.loktok}{\textcolor{blue}{Play Store}}
     }
 
@@ -186,18 +186,18 @@
 
 \projectSubheading
   {UNIVRSA -}
-  {Flutter, Firebase, Provider}
-  {\href{https://your-app-link.com} {\textcolor{blue}{App Link}}, 
+  {Flutter, Firebase, BLoC, SharedPreferences}
+  {\href{https://appetize.io/app/b_qnuuj6sb3rx3imtwm7eyjc4uta} {\textcolor{blue}{App Link}}, 
    \href{https://github.com/Mks30d/Student-App}{\textcolor{blue}{GitHub}}
   }
    
 \resumeItemListStart
   \resumeItem{}
-    {Developed UNIVRSA, a student management system app using Flutter and Firebase, allowing students to log in and track attendance, assignments, and academic information in real-time.}
+    {Developed an academic companion app using Flutter and BLoC, ensuring clean state management, modular design, and improved code maintainability.}
   \resumeItem{}
-    {Integrated Firebase for authentication, role-based access, and efficient real-time database management.}
+    {Engineered real-time backend using Firebase (Auth + Firestore + role-based access) and integrated push notifications via Firebase Cloud Messaging (FCM), enabling instant event alerts and improving student engagement.}
   \resumeItem{}
-    {Collaborated with a team of three to implement features like notes, PYQs, resource sharing, and user management with seamless real-time updates.}
+    {Built key features including attendance tracking, assignments, notes, and PYQs, delivering a centralized platform for academic management while enhancing user experience through intuitive UI design.}
   % \resumeItem{}
   %   {\textbf{Exposure:} Flutter, Firebase, Shared Preferences}
 \resumeItemListEnd
